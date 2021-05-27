@@ -1,12 +1,12 @@
 import App from 'next/app';
 import Head from 'next/head';
-import { AppProvider } from '@shopify/polaris';
-import { Provider } from '@shopify/app-bridge-react';
+import {AppProvider} from '@shopify/polaris';
+import {Provider} from '@shopify/app-bridge-react';
 import Cookies from "js-cookie";
 import '@shopify/polaris/dist/styles.css';
 import translations from '@shopify/polaris/locales/en.json';
 import ApolloClient from 'apollo-boost';
-import { ApolloProvider } from 'react-apollo';
+import {ApolloProvider} from 'react-apollo';
 import ClientRouter from '../components/ClientRouter';
 
 const client = new ApolloClient({
@@ -23,7 +23,7 @@ class MyApp extends App {
     return (
       <React.Fragment>
         <Head>
-          <title>Sample App</title>
+          <title>Product Upload Validator</title>
           <meta charSet="utf-8" />
         </Head>
         <Provider config={config}>
